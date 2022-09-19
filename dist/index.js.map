@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../index.ts"],
+  "sourcesContent": ["const ATTR_PROP_NAME = \"wb-date\";\nconst ATTR_YEAR_VAL_NAME = \"year\";\n\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n  const dateEls = document.querySelectorAll<HTMLElement>(`[${ATTR_PROP_NAME}]`);\n  if (!dateEls) return;\n\n  const todaysDate = new Date();\n\n  dateEls.forEach((dateEl) => {\n    if (dateEl.getAttribute(ATTR_PROP_NAME) === ATTR_YEAR_VAL_NAME) {\n      // this one wants the current year\n      dateEl.textContent = todaysDate.getFullYear().toString();\n    }\n  });\n});\n"],
+  "mappings": "MAAA,IAAMA,EAAiB,UACjBC,EAAqB,OAE3B,SAAS,iBAAiB,mBAAoB,IAAM,CAClD,IAAMC,EAAU,SAAS,iBAA8B,IAAIF,IAAiB,EAC5E,GAAI,CAACE,EAAS,OAEd,IAAMC,EAAa,IAAI,KAEvBD,EAAQ,QAASE,GAAW,CACtBA,EAAO,aAAaJ,CAAc,IAAMC,IAE1CG,EAAO,YAAcD,EAAW,YAAY,EAAE,SAAS,EAE3D,CAAC,CACH,CAAC",
+  "names": ["ATTR_PROP_NAME", "ATTR_YEAR_VAL_NAME", "dateEls", "todaysDate", "dateEl"]
+}
