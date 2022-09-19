@@ -1,6 +1,4 @@
-# Web Bae
-
-## Date Util
+# 🌶 Web Bae - Date Util
 
 This utility can be used to update a text element with specified data attribute to the current year (i.e. to always ensure copyright year is current year)
 
